@@ -1,0 +1,20 @@
+/* Root layout */
+.layout-container {
+  /* border: 1px solid grey; */
+  width: 60%;
+  margin: auto;
+}
+
+@media (max-width: 1038px) {
+  .layout-container {
+    width: 80%;
+  }
+}
+
+ 
+/* Responsive typography */
+@media (max-width: 788px) {
+  .layout-container {
+    width: 100%;
+  }
+}

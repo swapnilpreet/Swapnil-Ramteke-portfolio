@@ -1,0 +1,142 @@
+.resume {
+  padding: 2rem 1rem;
+  background-color: #f4f6f8;
+  font-family: "Poppins", sans-serif;
+}
+.label{
+  color: crimson;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #ee5d8d;
+}
+.resume-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ef1d66;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab.active {
+  background-color: #f50057;;
+  color: white;
+  font-weight: 600;
+  box-shadow: 1px 10px 15px #ee5d8d;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1d1d1d;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  padding: 2rem 1rem;
+}
+
+.education-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ee076e;
+  border-radius: 50%;
+  position: absolute;
+  left: -25px;
+  top: 20px;
+}
+
+.edu-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #222;
+   text-transform: uppercase;
+}
+
+.edu-subtitle {
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.edu-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab {
+    width: 100%;
+    text-align: center;
+  }
+
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-card {
+    max-width: 90%;
+  }
+
+  .timeline-dot {
+    left: -15px;
+  }
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 5;
+    transform: translateX(0);
+  }
+}
