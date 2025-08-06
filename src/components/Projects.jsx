@@ -76,15 +76,33 @@ const Projects = () => {
           <h2 className="projects-heading">My Projects</h2>
           <div className="projects-grid">
             {projects.map((project) => (
-              <div
-                key={project.id}
-                className="project-card"
-                onClick={() => setSelectedProject(project)}
-              >
-                <img src={project.images[0]} alt={project.title} />
-                <p className="type">{project.type}</p>
-                <p className="desc">{project.description}</p>
-                <h3 className="title">{project.title}</h3>
+              <div key={project.id} className="project-card">
+                <div onClick={() => setSelectedProject(project)}>
+                  <img src={project.images[0]} alt={project.title} />
+                  <h3 className="title">{project.title}</h3>
+                  <p className="type">{project.type}</p>
+                  <p className="desc">{project.description}</p>
+                </div>
+                <div className="top-project-links">
+                  <a
+                    href={project.deployment}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="demo-btn">
+                      <TbLivePhotoFilled size={22} /> Live Demo
+                    </button>
+                  </a>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="demo-btn">
+                      <PiGithubLogoBold size={22} /> GitHub Code
+                    </button>
+                  </a>
+                </div>
               </div>
             ))}
           </div>
