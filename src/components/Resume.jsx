@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Resume.css";
 const Resume = () => {
-  const [activeTab, setActiveTab] = useState("education");
+  const [activeTab, setActiveTab] = useState("experience");
 
   return (
     <div className="resume">
@@ -14,23 +14,27 @@ const Resume = () => {
       {/* Tabs */}
       <div className="tabs">
         <button
-          className={`tab ${activeTab === "education" ? "active" : ""}`}
-          onClick={() => setActiveTab("education")}
+          className={`tab ${activeTab === "experience" ? "active" : ""}`}
+          onClick={() => setActiveTab("experience")}
         >
-          Education
+          Experience
         </button>
+
         <button
           className={`tab ${activeTab === "skills" ? "active" : ""}`}
           onClick={() => setActiveTab("skills")}
         >
           Professional Skills
         </button>
-        <button
-          className={`tab ${activeTab === "experience" ? "active" : ""}`}
-          onClick={() => setActiveTab("experience")}
+
+         <button
+          className={`tab ${activeTab === "education" ? "active" : ""}`}
+          onClick={() => setActiveTab("education")}
         >
-          Experience
+          Education
         </button>
+
+      
       </div>
 
       {/* Education Section */}

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Hero.css";
 import { FaLinkedin, FaGithub, FaEnvelope, FaArrowUp } from "react-icons/fa";
-import { SiHtml5, SiJavascript, SiReact } from "react-icons/si";
+import {  SiJavascript, SiReact } from "react-icons/si";
 import logo from "../assets/profilepic.png";
-
+import { TbBrandNextjs } from "react-icons/tb";
 const titles = [
   "Full Stack Developer",
   "Problem solver",
@@ -107,7 +107,7 @@ const Hero = () => {
               <div className="icon-title">BEST SKILL ON</div>
               <div className="icon-grid">
                 <div className="icon-box">
-                  <SiHtml5 color="#e34c26" />
+                  <TbBrandNextjs  color="#e34c26" />
                 </div>
                 <div className="icon-box">
                   <SiJavascript

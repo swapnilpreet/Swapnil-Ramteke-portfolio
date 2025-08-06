@@ -23,6 +23,7 @@
 }
 
 .footer-nav li {
+  cursor: pointer;
   list-style: none;
   color: #201d1d;
   text-decoration: none;
